@@ -32,6 +32,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         btnHoli = new javax.swing.JButton();
         btnOkki = new javax.swing.JButton();
+        btnPls = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,6 +50,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        btnPls.setText("Pls");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -56,6 +59,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(159, 159, 159)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnPls)
                     .addComponent(btnOkki)
                     .addComponent(btnHoli))
                 .addContainerGap(201, Short.MAX_VALUE))
@@ -67,7 +71,9 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(btnHoli)
                 .addGap(28, 28, 28)
                 .addComponent(btnOkki)
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(btnPls)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         pack();
@@ -119,5 +125,6 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHoli;
     private javax.swing.JButton btnOkki;
+    private javax.swing.JButton btnPls;
     // End of variables declaration//GEN-END:variables
 }
