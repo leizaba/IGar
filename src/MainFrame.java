@@ -31,13 +31,21 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         btnHoli = new javax.swing.JButton();
+        btnOkki = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnHoli.setText("Holi");
         btnHoli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHoliActionPerformed(evt);
+                openDialog(evt);
+            }
+        });
+
+        btnOkki.setText("Okki");
+        btnOkki.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openDialog(evt);
             }
         });
 
@@ -47,27 +55,31 @@ public class MainFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(159, 159, 159)
-                .addComponent(btnHoli)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnOkki)
+                    .addComponent(btnHoli))
+                .addContainerGap(201, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(76, 76, 76)
                 .addComponent(btnHoli)
-                .addContainerGap(192, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(btnOkki)
+                .addContainerGap(132, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnHoliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoliActionPerformed
+    private void openDialog(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openDialog
         // TODO add your handling code here:
         
         Dialog dialog = new Dialog(MainFrame.this, rootPaneCheckingEnabled);
         dialog.setVisible(true);
         
-    }//GEN-LAST:event_btnHoliActionPerformed
+    }//GEN-LAST:event_openDialog
 
     /**
      * @param args the command line arguments
@@ -106,5 +118,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHoli;
+    private javax.swing.JButton btnOkki;
     // End of variables declaration//GEN-END:variables
 }
