@@ -1,5 +1,6 @@
 
 import javax.sql.rowset.JdbcRowSet;
+import javax.swing.JButton;
 import javax.swing.JDialog;
 
 /*
@@ -70,7 +71,9 @@ public class MainFrame extends javax.swing.JFrame {
     private void openDialog(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openDialog
         // TODO add your handling code here:
         
-        Dialog dialog = new Dialog(MainFrame.this, rootPaneCheckingEnabled);
+        Dialog dialog = new Dialog(MainFrame.this, true);
+        JButton btn = (JButton)evt.getSource();
+        dialog.setLbl1(btn.getText());
         dialog.setVisible(true);
         
     }//GEN-LAST:event_openDialog
