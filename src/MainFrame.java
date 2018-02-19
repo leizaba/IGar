@@ -37,6 +37,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnPls2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.GridLayout());
 
         btnHoli.setText("Holi");
         btnHoli.addActionListener(new java.awt.event.ActionListener() {
@@ -44,6 +45,7 @@ public class MainFrame extends javax.swing.JFrame {
                 openDialog(evt);
             }
         });
+        getContentPane().add(btnHoli);
 
         btnOkki.setText("Okki");
         btnOkki.addActionListener(new java.awt.event.ActionListener() {
@@ -51,57 +53,16 @@ public class MainFrame extends javax.swing.JFrame {
                 openDialog(evt);
             }
         });
+        getContentPane().add(btnOkki);
 
         btnPls.setText("Pls");
+        getContentPane().add(btnPls);
 
         btnPls1.setText("Pls");
+        getContentPane().add(btnPls1);
 
         btnPls2.setText("Pls");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(159, 159, 159)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnOkki)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnHoli)
-                        .addGap(79, 79, 79)
-                        .addComponent(btnPls)))
-                .addContainerGap(92, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnPls1)
-                .addGap(71, 71, 71))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(179, 179, 179)
-                    .addComponent(btnPls2)
-                    .addContainerGap(189, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(btnHoli))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(btnPls)))
-                .addGap(28, 28, 28)
-                .addComponent(btnOkki)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(btnPls1)
-                .addGap(58, 58, 58))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(222, Short.MAX_VALUE)
-                    .addComponent(btnPls2)
-                    .addGap(46, 46, 46)))
-        );
+        getContentPane().add(btnPls2);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
