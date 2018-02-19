@@ -1,0 +1,2 @@
+# IGar
+Klasean egindako eredua
